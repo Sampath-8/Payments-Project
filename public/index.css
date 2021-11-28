@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+
+*{
+    /* background-color:blue; */
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Gudea";
+}
+
+
+html{
+/* background: -moz-linear-gradient(-45deg,  #EA5C54  0%, #bb6dec 100%); 
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#EA5C54 ), color-stop(100%,#bb6dec)); 
+  background: -webkit-linear-gradient(-45deg,  #EA5C54  0%,#bb6dec 100%); 
+  background: -o-linear-gradient(-45deg,  #EA5C54  0%,#bb6dec 100%); 
+  background: -ms-linear-gradient(-45deg,  #EA5C54  0%,#bb6dec 100%);  */
+ 
+  /* background-color: black; */
+    background-repeat: no-repeat;
+  /* display: block; */
+  height:100%;
+  /* background-color:rosybrown; */
+}
+
+body{
+    /* background: linear-gradient(135 deg,  #EA5C54  ,#bb6dec 100%); */
+    background-color: lightpink;
+    padding:20px;
+}
+
+form{
+    width:100%;
+}
+.main-container::after{
+      
+  content: "";
+  clear: both;
+  display: table;
+}
+.sender-container, .receiver-container, .transaction-container{
+    /* border:1px solid orange; */
+    background:linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+    width:30%;
+    padding:50px 40px;
+    color:#afb1be;
+    border-radius: 5px;
+    text-align: center;
+    float: left;
+
+}
+.main-container{
+    margin-top:20px;
+}
+
+.sender-container{
+    margin-left:50px;
+}
+
+.receiver-container{
+    margin-left:20px;
+}
+.transaction-container{
+    margin-left: 20px;
+}
+
+.sender-container input , .receiver-container input, .transaction-container input, .transaction-container select{
+        color:white;
+        width: 100%;
+        margin-top: -2px;
+        background: #32364a;
+        left: 0;
+        padding: 10px 15px;
+        border-top: 1px solid #393d52;
+        border-bottom: 1px solid #dfdfdf;
+        border-right: 1px solid #393d52;
+        border-left: 1px solid #393d52;
+        outline: none;
+        font-family: "Gudea", sans-serif;
+        box-shadow: none;
+        /* float:right; */
+    
+}
+
+span{
+    float:left;
+    color:rgb(218, 218, 218);
+}
+
+.small-container::after{
+    
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.small-container{
+    margin:20px 0px;
+}
+
+.sender-container h2, .receiver-container h2{
+    margin-bottom:40px;
+    color:rgb(218, 218, 218);
+}
+
+.transaction-container h2{
+    margin-bottom: 36px;
+    color:rgb(218, 218, 218)
+}
+.small-container span{
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+#id::after{
+
+    content: "";
+  clear: both;
+  display: table;
+
+
+}
+
+.transaction-container .small-container input[type="button"]{
+    border:2px solid #DC6180;
+    border-radius:50px;
+    cursor:pointer;
+    transition-property:background,color;
+    transition-duration:.2s;
+}
+.transaction-container .small-container input[type="button"]:hover{
+    color:white;
+    background:#DC6180 ;
+    cursor:pointer;
+    transition-property:background,color;
+    transition-duration:.2s;
+}/* 
+
+.transfer-fee{
+    width:50% !important;
+} */
+
